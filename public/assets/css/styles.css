@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background: linear-gradient(to right, rgb(1, 1, 109), rgb(125, 194, 216));
+    /* Add more styles for your header and footer */
+}
+
+.navbar-brand img{
+    height: 50px;
+    width: auto;
+}
+
+/* LOGIN BOX */
+
+.login-box {
+    width: 100%;
+    max-width: 400px; /* adjust as needed */
+    margin: 0 auto; /* center the box */
+    padding: 20px;
+    background-color: #fff; /* adjust as needed */
+    border: 1px solid #ddd; /* adjust as needed */
+    border-radius: 5px; /* adjust as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* adjust as needed */
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd; /* adjust as needed */
+    border-radius: 5px; /* adjust as needed */
+    margin-bottom: 10px;
+}
+
+.login-box input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* adjust as needed */
+    color: #fff; /* adjust as needed */
+    border: none;
+    border-radius: 5px; /* adjust as needed */
+    cursor: pointer;
+}
+
+.login-box input[type="submit"]:hover {
+    background-color: #0056b3; /* adjust as needed */
+}
