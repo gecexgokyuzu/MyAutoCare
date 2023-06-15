@@ -8,13 +8,13 @@
                 <ul class="navbar-nav mr-auto">
                     <!-- Home, Support, Contact icons -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-home"></i></a>
+                        <a class="nav-link" href="#"><i class="fa-2x fas fa-home"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-headset"></i></a>
+                        <a class="nav-link" href="#"><i class="fa-2x fas fa-headset"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-envelope"></i></a>
+                        <a class="nav-link" href="#"><i class="fa-2x fas fa-envelope"></i></a>
                     </li>
                 </ul>
                 <div class="navbar-brand mx-auto">
@@ -24,13 +24,13 @@
                 <ul class="navbar-nav ml-auto">
                     <!-- Profile, Notifications, Message Inbox icons -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+                        <a class="nav-link" href="#"><i class="fa-2x fas fa-user"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                        <a class="nav-link" href="#"><i class="fa-2x fas fa-bell"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-inbox"></i></a>
+                        <a class="nav-link" href="#"><i class="fa-2x fas fa-inbox"></i></a>
                     </li>
                 </ul>
             </div>

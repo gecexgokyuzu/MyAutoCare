@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,26 +13,28 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column h-100">
+<body>
     <?php include 'includes/header.php'; ?>
-    <main class="d-flex align-items-center justify-content-center">
-        <div class="login-box">
-            <h2>Login</h2>
-            <form action="login.php" method="post">
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email">
-                </div>
-                <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password">
-                </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="remember">
-                    <label class="form-check-label" for="remember">Keep me logged in</label>
-                </div>
-                <input type="submit" value="Login">
-            </form>
+    <main>
+        <div class="d-flex align-items-center">
+            <div class="login-box">
+                <h2>Login</h2>
+                <form action="login.php" method="post">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="remember">
+                        <label class="form-check-label" for="remember">Keep me logged in</label>
+                    </div>
+                    <input type="submit" value="Login">
+                </form>
+            </div>
         </div>
     </main>
     <?php include 'includes/footer.php'; ?>
