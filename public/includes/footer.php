@@ -1,4 +1,4 @@
-<footer class="bg-dark text-light py-3">
+<footer class="bg-dark text-light">
     <div class="container">
         <div class="row justify-content-between align-items-center m-3">
             <div class="col-md-4">
@@ -7,9 +7,9 @@
                     <a href="#" class="nav-link">Contact Us</a>
                 </h5>
                 <div class="collapse d-md-block justify-content-center text-primary" id="contact">
-                    <div class="mb-2 align-items-left">
-                        <p>(123) 456-7890</p>
-                        <p>info@myautocare.com</p>
+                    <div class="flex-md-row mb-2">
+                        <p class="col-12">Phone: (123) 456-7890</p>
+                        <p class="col-12">Email: info@myautocare.com</p>
                     </div>
                     <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Contact Form</button>
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -55,16 +55,9 @@
                 </div>
             </div>
             <div class="col-md-4 justify-content-between">
-                <!-- Social media links -->
-                <div class="justify-content-center mb-1">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-                <!-- Logo -->
-                <!-- Trademark -->
+                <!-- Logo --> <!-- Trademark -->
                 <div class="justify-content-center text-dark align-items-center">
-                    <div class="navbar-brand mx-auto">
+                    <div class="navbar-brand mx-auto d-none d-md-block">
                         <img src="../assets/images/CMHlogo.png" alt="Logo" class="navbar-logo">
                     </div>
                     <p><small><em>&copy; 2023 MyAutoCare, designed by <a href="#" class="link-dark">OmeDesign</em></a></small></p>
