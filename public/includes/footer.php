@@ -1,6 +1,6 @@
-<footer class="bg-dark text-light">
+<footer class="footer mt-auto bg-dark text-light">
     <div class="container">
-        <div class="row justify-content-between align-items-center m-3">
+        <div class="row justify-content-between align-items-center mb-2">
             <div class="col-md-4">
                 <!-- Contact information -->
                 <h5 class="d-md-none nav-item" data-bs-toggle="collapse" data-bs-target="#contact" aria-expanded="false" aria-controls="contact">

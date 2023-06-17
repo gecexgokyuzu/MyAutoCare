@@ -15,7 +15,7 @@
 
 <body>
     <?php include 'includes/header.php'; ?>
-    <main>
+    <main class="flex-shrink-0">
         <div class="d-flex align-items-center">
             <div class="login-box">
                 <form action="login.php" method="post">

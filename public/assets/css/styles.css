@@ -129,7 +129,7 @@ footer button{
 
 /* MAIN */
 main{
-    margin-bottom: 30svh;
+    margin-bottom: 15svh;
 }
 
 /* LOGIN BOX */
@@ -192,4 +192,41 @@ main{
 .login-box input[type="submit"]:hover {
     transition: 0.5s;
     background-color: #ca8e46;
+}
+
+/* CARDS */
+
+.card {
+    transition: 0.3s;
+    width: 16rem;
+    height: auto;
+    background-color: #F7F2F0;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.card img {
+    height: auto;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #4e76e8;
+}
+
+.card-text {
+    color: #2b376d;
+}
+
+.btn-primary {
+    background-color: #4e76e8;
+    border-color: #4e76e8;
+}
+
+.btn-primary:hover {
+    background-color: #2b376d;
+    border-color: #2b376d;
 }
