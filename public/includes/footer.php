@@ -6,12 +6,12 @@
                 <h5 class="d-md-none nav-item" data-bs-toggle="collapse" data-bs-target="#contact" aria-expanded="false" aria-controls="contact">
                     <a href="#" class="nav-link">Contact Us</a>
                 </h5>
-                <div class="collapse d-md-block justify-content-center text-primary" id="contact">
+                <div class="collapse d-md-block justify-content-center" id="contact">
                     <div class="flex-md-row mb-2">
                         <p class="col-12">Phone: (123) 456-7890</p>
                         <p class="col-12">Email: info@myautocare.com</p>
                     </div>
-                    <button type="button" class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Contact Form</button>
+                    <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Contact Form</button>
                 </div>
             </div>
             <div class="col-md-4 mb-1">

@@ -26,12 +26,11 @@ body {
 }
 
 header {
-    background: linear-gradient(to bottom, black, #2B376D);
-    
+    background: linear-gradient(to bottom, black, rgba(43, 55, 109));
 }
 
 header i {
-    padding: 10px;
+    padding: 5px;
 }
 
 header .navbar-nav {
@@ -49,7 +48,7 @@ header .navbar-nav {
     right: 0;
     margin: 0 auto;
     content: "";
-    background-color: #F7F2F0;
+    background-color: #80B8DD;
     width: 0%;
     height: 4px;
     transition: all 0.3s;
@@ -61,12 +60,12 @@ header .navbar-nav {
 
 .navbar .nav-link {
     padding: 0.3rem;
-    color: #4C73EB;
-    transition: all 1s;
+    color: #F7F2F0;
+    transition: all 0,3s;
 }
 
 .navbar .nav-link:hover {
-    color: #F7F2F0;
+    color: #80B8DD;
 }
 
 .navbar-brand img {
@@ -81,6 +80,7 @@ header .navbar-nav {
 }
 
 /* FOOTER */
+
 footer {
     background: linear-gradient(to top, black, #2B376D);
     position:fixed;
@@ -99,6 +99,7 @@ footer p {
 
 footer a {
     font-size: clamp(0.7rem, 1.5vw, 1rem);
+    color: #F7F2F0;
 }
 
 footer h5 {
@@ -124,6 +125,11 @@ footer button{
 .modal-content {
     margin: 2px auto;
     z-index: 1100 !important;
+}
+
+/* MAIN */
+main{
+    margin-bottom: 30svh;
 }
 
 /* LOGIN BOX */

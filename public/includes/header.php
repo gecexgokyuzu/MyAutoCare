@@ -10,13 +10,13 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                 <ul class="navbar-nav mr-auto float-start justify-content-between">
                     <!-- Home, Support, Contact icons -->
-                    <li class="nav-item px-2">
+                    <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa-2x fas fa-home"></i></a>
                     </li>
-                    <li class="nav-item px-2">
+                    <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa-2x fas fa-headset"></i></a>
                     </li>
-                    <li class="nav-item px-2">
+                    <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa-2x fas fa-envelope"></i></a>
                     </li>
                 </ul>
@@ -26,14 +26,14 @@
                 </div>
                 <ul class="navbar-nav ml-auto float-end justify-content-between">
                     <!-- Profile, Notifications, Message Inbox icons -->
-                    <li class="nav-item px-2">
+                    <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa-2x fas fa-user"></i></a>
                     </li>
-                    <li class="nav-item px-2">
+                    <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa-2x fas fa-bell"></i></a>
                     </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="#"><i class="fa-2x fas fa-inbox"></i></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-2x fas fa-cog"></i></a>
                     </li>
                 </ul>
             </div>
