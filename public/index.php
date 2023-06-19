@@ -19,7 +19,7 @@
     <?php include 'includes/header.php'; ?>
     <main class="container flex-shrink-0">
         <div class="d-flex flex-wrap justify-content-center mb-3">
-        <div class="collapse position-absolute live-chat col-8 col-md-4" id="live-chat" aria-expanded="false">
+        <div class="collapse position-fixed live-chat col-8 col-md-4" id="live-chat" aria-expanded="false">
             <div class="card">
                 <div class="card-header bg-dark">
                     <small class="text-white">Live Chat</small>

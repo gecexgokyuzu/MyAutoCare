@@ -173,8 +173,10 @@ footer button{
     transition: 0.3s;
 }
 
-.login-box input[type="text"],
-.login-box input[type="password"] {
+.login-box input[type="email"],
+.login-box input[type="password"],
+.login-box input[type="number"],
+.login-box input[type="tel"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ca8e46;
