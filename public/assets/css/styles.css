@@ -163,14 +163,14 @@ footer button{
     margin-top: 10dvh;
     padding: 20px;
     background-color: #2B376D;
-    border: 3px solid #ca8e46;
-    border-radius: 8px;
+    border: 2px solid #ca8e46;
+    border-radius: 15px;
     transition: all 0.5s;
 }
 
 .login-box:focus-within {
     box-shadow: 2px 2px 30px #F7F2F0a0;
-    transition: 0.8s;
+    transition: 0.5s;
 }
 
 .login-box input[type="email"],
@@ -234,6 +234,14 @@ footer button{
 
 .input-carousel {
     height: calc(3.5rem + 2px);
+}
+
+.login-box .btn-primary:disabled {
+    box-shadow: 0 0 0 0.2rem #ca8e46;
+    background-color: #ca8e46;
+    border-color: #ca8e46;
+    opacity: 1;
+    transition: all 0.3s ease-in-out !important;
 }
 
 /* CARDS */

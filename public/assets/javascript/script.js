@@ -54,8 +54,7 @@ function fadeIn(inputWrapper, button) {
     inputWrapper.classList.remove('d-none');
     setTimeout(() => {
       inputWrapper.classList.add('show');
-      button.setAttribute('disabled', 'disabled');
-      button.classList.add('active');
+      button.setAttribute('disabled', true);
     }, 100); // waiting for the same duration as the fade-out to start the fade-in
   }, 400); // waiting for the fade-out to complete
 }
@@ -63,7 +62,6 @@ function fadeIn(inputWrapper, button) {
 function fadeOut(inputWrapper, button) {
   inputWrapper.classList.remove('show');
   button.removeAttribute('disabled');
-  button.classList.remove('active');
   setTimeout(() => {
     if (!inputWrapper.classList.contains('show')) {
       inputWrapper.classList.add('d-none');
