@@ -19,7 +19,7 @@
     <?php include 'includes/header.php'; ?>
     <main class="container flex-shrink-0">
         <div class="d-flex flex-wrap justify-content-center mb-3">
-        <div class="collapse position-absolute live-chat" id="live-chat" aria-expanded="false">
+        <div class="collapse position-absolute live-chat col-8 col-md-4" id="live-chat" aria-expanded="false">
             <div class="card">
                 <div class="card-header bg-dark">
                     <small class="text-white">Live Chat</small>
@@ -33,7 +33,7 @@
                 </div>
             </div>
         </div>
-            <div class="card m-4">
+            <div class="service-card card m-4">
                 <img src="assets/images/concierge.jpg" class="card-img-top" alt="Concierge Image">
                 <div class="card-body">
                     <h5 class="card-title">Concierge</h5>
@@ -41,7 +41,7 @@
                     <a href="concierge.php" class="btn btn-primary">Go to Concierge</a>
                 </div>
             </div>
-            <div class="card m-4">
+            <div class="service-card card m-4">
                 <img src="assets/images/taxi.jpg" class="card-img-top" alt="Taxi Image">
                 <div class="card-body">
                     <h5 class="card-title">Taxi</h5>
@@ -49,7 +49,7 @@
                     <a href="taxi.php" class="btn btn-primary">Go to Taxi</a>
                 </div>
             </div>
-            <div class="card m-4">
+            <div class="service-card card m-4">
                 <img src="assets/images/road_assistant.jpg" class="card-img-top" alt="Road Assistant Image">
                 <div class="card-body">
                     <h5 class="card-title">Road Assistant</h5>
@@ -57,7 +57,7 @@
                     <a href="road_assistant.php" class="btn btn-primary">Go to Road Assistant</a>
                 </div>
             </div>
-            <div class="card m-4">
+            <div class="service-card card m-4">
                 <img src="assets/images/drive_home_unlimited.jpg" class="card-img-top" alt="Drive Home Unlimited Image">
                 <div class="card-body">
                     <h5 class="card-title">Drive Home Unlimited</h5>
@@ -65,7 +65,7 @@
                     <a href="drive_home_unlimited.php" class="btn btn-primary">Go to Drive Home Unlimited</a>
                 </div>
             </div>
-            <div class="card m-4">
+            <div class="service-card card m-4">
                 <img src="assets/images/surface_plan.jpg" class="card-img-top" alt="Surface Plan Image">
                 <div class="card-body">
                     <h5 class="card-title">Surface Plan</h5>
@@ -73,7 +73,7 @@
                     <a href="surface_plan.php" class="btn btn-primary">Go to Surface Plan</a>
                 </div>
             </div>
-            <div class="card m-4">
+            <div class="service-card card m-4">
                 <img src="assets/images/courtesy_car.jpg" class="card-img-top" alt="Courtesy Car Image">
                 <div class="card-body">
                     <h5 class="card-title">Courtesy Car</h5>
@@ -81,7 +81,7 @@
                     <a href="courtesy_car.php" class="btn btn-primary">Go to Courtesy Car</a>
                 </div>
             </div>
-            <div class="card m-4">
+            <div class="service-card card m-4">
                 <img src="assets/images/armed_response.jpg" class="card-img-top" alt="Armed Response Image">
                 <div class="card-body">
                     <h5 class="card-title">Armed Response</h5>
@@ -89,7 +89,7 @@
                     <a href="armed_response.php" class="btn btn-primary">Go to Armed Response</a>
                 </div>
             </div>
-            <div class="card m-4">
+            <div class="service-card card m-4">
                 <img src="assets/images/hijack_assist.jpg" class="card-img-top" alt="Hijack Assist Image">
                 <div class="card-body">
                     <h5 class="card-title">Hijack Assist</h5>
@@ -97,7 +97,7 @@
                     <a href="hijack_assist.php" class="btn btn-primary">Go to Hijack Assist</a>
                 </div>
             </div>
-            <div class="card m-4">
+            <div class="service-card card m-4">
                 <img src="assets/images/please_call_me.jpg" class="card-img-top" alt="Please Call Me Image">
                 <div class="card-body">
                     <h5 class="card-title">Please Call Me</h5>
@@ -105,7 +105,7 @@
                     <a href="please_call_me.php" class="btn btn-primary">Go to Please Call Me</a>
                 </div>
             </div>
-            <div class="card m-4">
+            <div class="service-card card m-4">
                 <img src="assets/images/my_profile.jpg" class="card-img-top" alt="My Profile Image">
                 <div class="card-body">
                     <h5 class="card-title">My Profile</h5>

@@ -218,28 +218,28 @@ footer button{
 
 /* CARDS */
 
-.card {
+.service-card {
     transition: 0.3s;
     width: 16rem;
     height: auto;
     background-color: #F7F2F0;
 }
 
-.card:hover {
+.service-card:hover {
     transform: scale(1.02);
     transition: 0.3s;
 }
 
-.card img {
+.service-card img {
     height: auto;
     object-fit: cover;
 }
 
-.card-title {
+.service-card .card-title {
     color: #4e76e8;
 }
 
-.card-text {
+.service-card .card-text {
     color: #2b376d;
 }
 
