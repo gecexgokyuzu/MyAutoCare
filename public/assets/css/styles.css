@@ -165,12 +165,12 @@ footer button{
     background-color: #2B376D;
     border: 3px solid #ca8e46;
     border-radius: 8px;
-    transition: 0.3s;
+    transition: all 0.5s;
 }
 
 .login-box:focus-within {
-    box-shadow: 2px 2px 50px #F7F2F0a0;
-    transition: 0.3s;
+    box-shadow: 2px 2px 30px #F7F2F0a0;
+    transition: 0.8s;
 }
 
 .login-box input[type="email"],
@@ -180,8 +180,9 @@ footer button{
     width: 100%;
     padding: 10px;
     border: 1px solid #ca8e46;
-    border-radius: 5px;
+    border-radius: 3px;
     margin-bottom: 10px;
+    transition: all 0.5s;
 }
 
 .login-box .login-button {
@@ -197,7 +198,6 @@ footer button{
 
 .login-box input[type="checkbox"] {
     background-color: #F7F2F0;
-    transition: 0.5s;
 }
 
 .login-box label.form-check-label {
@@ -205,8 +205,8 @@ footer button{
 }
 
 .login-box input[type="checkbox"]:hover {
-    transition: 0.5s;
     background-color: #ca8e46;
+    transition: all 0.5s;
 }
 
 .login-box input[type="checkbox"]:checked {
@@ -214,8 +214,8 @@ footer button{
 }
 
 .login-box .login-button:hover {
-    transition: 0.5s;
     background-color: #ca8e46;
+    transition: all 0.5s;
 }
 
 .login-box label {
@@ -223,7 +223,17 @@ footer button{
 }
 
 .slow-fade {
-    transition: opacity 0.5s ease-in-out !important;
+    width: 100%;
+    transition: all 0.5s ease-in-out !important;
+}
+
+.show {
+    opacity: 1;
+    transition: all 0.5s ease-in-out !important;
+}
+
+.input-carousel {
+    height: calc(3.5rem + 2px);
 }
 
 /* CARDS */

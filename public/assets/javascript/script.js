@@ -21,31 +21,54 @@
 })()
 
 // TOGGLE INPUTS
-function toggleInput(type) {
-  var inputTypes = ['email', 'phone', 'idnumber'];
+function toggleInput(inputType) {
+  const emailInputWrapper = document.getElementById('email-input-wrapper');
+  const phoneInputWrapper = document.getElementById('phone-input-wrapper');
+  const idnumberInputWrapper = document.getElementById('idnumber-input-wrapper');
 
-  for (var i = 0; i < inputTypes.length; i++) {
-      var inputWrapper = document.getElementById(inputTypes[i] + '-input-wrapper');
-      var inputElement = document.getElementById(inputTypes[i] + '-input');
-      var button = document.getElementById(inputTypes[i] + '-button');
+  const emailButton = document.getElementById('email-button');
+  const phoneButton = document.getElementById('phone-button');
+  const idnumberButton = document.getElementById('idnumber-button');
 
-      inputWrapper.classList.remove('show');
-      inputWrapper.classList.add('d-none');
-      inputElement.classList.add('d-none');
-      button.disabled = false;
+  switch (inputType) {
+    case 'email':
+      fadeOut(phoneInputWrapper, phoneButton);
+      fadeOut(idnumberInputWrapper, idnumberButton);
+      fadeIn(emailInputWrapper, emailButton);
+      break;
+    case 'phone':
+      fadeOut(emailInputWrapper, emailButton);
+      fadeOut(idnumberInputWrapper, idnumberButton);
+      fadeIn(phoneInputWrapper, phoneButton);
+      break;
+    case 'idnumber':
+      fadeOut(phoneInputWrapper, phoneButton);
+      fadeOut(emailInputWrapper, emailButton);
+      fadeIn(idnumberInputWrapper, idnumberButton);
+      break;
   }
-
-  var selectedInputWrapper = document.getElementById(type + '-input-wrapper');
-  var selectedInputElement = document.getElementById(type + '-input');
-  var selectedButton = document.getElementById(type + '-button');
-
-  selectedInputWrapper.classList.remove('d-none');
-  selectedInputWrapper.classList.add('d-block');
-  selectedInputElement.classList.remove('d-none');
-
-  setTimeout(function() {
-      selectedInputWrapper.classList.add('show');
-  }, 10);
-
-  selectedButton.disabled = true;
 }
+
+function fadeIn(inputWrapper, button) {
+  setTimeout(() => {
+    inputWrapper.classList.remove('d-none');
+    setTimeout(() => {
+      inputWrapper.classList.add('show');
+      button.setAttribute('disabled', 'disabled');
+      button.classList.add('active');
+    }, 100); // waiting for the same duration as the fade-out to start the fade-in
+  }, 400); // waiting for the fade-out to complete
+}
+
+function fadeOut(inputWrapper, button) {
+  inputWrapper.classList.remove('show');
+  button.removeAttribute('disabled');
+  button.classList.remove('active');
+  setTimeout(() => {
+    if (!inputWrapper.classList.contains('show')) {
+      inputWrapper.classList.add('d-none');
+    }
+  }, 500); // Match this duration with the CSS transition duration
+}
+
+toggleInput('email');
