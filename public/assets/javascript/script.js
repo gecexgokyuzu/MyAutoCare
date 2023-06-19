@@ -2,11 +2,7 @@
 
 (function () {
   'use strict'
-
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
   var forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
   Array.prototype.slice.call(forms)
     .forEach(function (form) {
       form.addEventListener('submit', function (event) {
@@ -14,7 +10,6 @@
           event.preventDefault()
           event.stopPropagation()
         }
-
         form.classList.add('was-validated')
       }, false)
     })
@@ -55,8 +50,8 @@ function fadeIn(inputWrapper, button) {
     setTimeout(() => {
       inputWrapper.classList.add('show');
       button.setAttribute('disabled', true);
-    }, 100); // waiting for the same duration as the fade-out to start the fade-in
-  }, 400); // waiting for the fade-out to complete
+    }, 100);
+  }, 400);
 }
 
 function fadeOut(inputWrapper, button) {
@@ -66,7 +61,6 @@ function fadeOut(inputWrapper, button) {
     if (!inputWrapper.classList.contains('show')) {
       inputWrapper.classList.add('d-none');
     }
-  }, 500); // Match this duration with the CSS transition duration
+  }, 500);
 }
-
 toggleInput('email');
