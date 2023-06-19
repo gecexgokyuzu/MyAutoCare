@@ -160,7 +160,7 @@ footer button{
     flex-grow: 1;
     max-width: 400px;
     margin: 0 auto;
-    margin-top: 15dvh;
+    margin-top: 10dvh;
     padding: 20px;
     background-color: #2B376D;
     border: 3px solid #ca8e46;
@@ -184,7 +184,7 @@ footer button{
     margin-bottom: 10px;
 }
 
-.login-box input[type="submit"] {
+.login-box .login-button {
     width: 100%;
     padding: 10px;
     background-color: #4e76e8;
@@ -213,9 +213,17 @@ footer button{
     background-color: #ca8e46;
 }
 
-.login-box input[type="submit"]:hover {
+.login-box .login-button:hover {
     transition: 0.5s;
     background-color: #ca8e46;
+}
+
+.login-box label {
+    color: #2b376d;
+}
+
+.slow-fade {
+    transition: opacity 0.5s ease-in-out !important;
 }
 
 /* CARDS */
@@ -251,6 +259,6 @@ footer button{
 }
 
 .btn-primary:hover {
-    background-color: #2b376d;
-    border-color: #2b376d;
+    background-color: #ca8e46;
+    border-color: #ca8e46;
 }
