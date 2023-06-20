@@ -132,7 +132,6 @@ footer .navbar-brand img {
 }
 
 footer button{
-    text-decoration: wavy;
     font-style: italic;
 }
 
@@ -279,4 +278,36 @@ footer button{
 .btn-primary:hover {
     background-color: #ca8e46;
     border-color: #ca8e46;
+}
+
+.profile-box {
+    align-items: center;
+    max-width: 992px;
+    margin: 5dvh auto;
+    padding: 20px;
+    background-color: #2B376D;
+    border: 2px solid #ca8e46;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.profile.details{
+    width: auto;
+}
+
+.profile-img {
+    flex: 0 0 initial;
+    max-width: 200px;
+    padding: 0px;
+    border: 2px solid #ca8e46;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-img img {
+    border-radius: 50%;
+    width: 100%;
+    aspect-ratio: 1/1;
+    scale: 1.1;
+    object-fit: cover;
 }
