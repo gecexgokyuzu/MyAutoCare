@@ -291,10 +291,6 @@ footer button{
     transition: all 0.5s;
 }
 
-.profile.details{
-    width: auto;
-}
-
 .profile-img {
     flex: 0 0 initial;
     max-width: 200px;
@@ -310,4 +306,8 @@ footer button{
     aspect-ratio: 1/1;
     scale: 1.1;
     object-fit: cover;
+}
+
+.profile-controls * {
+    transition: all 0.5s;
 }

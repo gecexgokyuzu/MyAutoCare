@@ -1,29 +1,23 @@
 // FORM VALIDATION
-
-(function () {
-  'use strict'
-  var forms = document.querySelectorAll('.needs-validation')
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
-        form.classList.add('was-validated')
-      }, false)
-    })
-})()
+$(document).ready(function () {
+  $('.needs-validation').on('submit', function (event) {
+    if (!this.checkValidity()) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    $(this).addClass('was-validated');
+  });
+});
 
 // TOGGLE INPUTS
 function toggleInput(inputType) {
-  const emailInputWrapper = document.getElementById('email-input-wrapper');
-  const phoneInputWrapper = document.getElementById('phone-input-wrapper');
-  const idnumberInputWrapper = document.getElementById('idnumber-input-wrapper');
+  const emailInputWrapper = $('#email-input-wrapper');
+  const phoneInputWrapper = $('#phone-input-wrapper');
+  const idnumberInputWrapper = $('#idnumber-input-wrapper');
 
-  const emailButton = document.getElementById('email-button');
-  const phoneButton = document.getElementById('phone-button');
-  const idnumberButton = document.getElementById('idnumber-button');
+  const emailButton = $('#email-button');
+  const phoneButton = $('#phone-button');
+  const idnumberButton = $('#idnumber-button');
 
   switch (inputType) {
     case 'email':
@@ -46,21 +40,62 @@ function toggleInput(inputType) {
 
 function fadeIn(inputWrapper, button) {
   setTimeout(() => {
-    inputWrapper.classList.remove('d-none');
+    inputWrapper.removeClass('d-none');
     setTimeout(() => {
-      inputWrapper.classList.add('show');
-      button.setAttribute('disabled', true);
+      inputWrapper.addClass('show');
+      button.attr('disabled', true);
     }, 100);
   }, 400);
 }
 
 function fadeOut(inputWrapper, button) {
-  inputWrapper.classList.remove('show');
-  button.removeAttribute('disabled');
+  inputWrapper.removeClass('show');
+  button.removeAttr('disabled');
   setTimeout(() => {
-    if (!inputWrapper.classList.contains('show')) {
-      inputWrapper.classList.add('d-none');
+    if (!inputWrapper.hasClass('show')) {
+      inputWrapper.addClass('d-none');
     }
   }, 500);
 }
-toggleInput('email');
+
+// PROFILE EDITING
+$(document).ready(function () {
+  let isEditMode = false;
+  let initialFieldValues = {};
+
+  $("#profile-save-button").click(function () {
+      isEditMode = !isEditMode;
+
+      if (isEditMode) {
+          // Enabling edit mode
+          $(".editable-fields input").each(function () {
+              const id = $(this).attr("id");
+              initialFieldValues[id] = $(this).val();
+          });
+          $(".editable-fields input").prop("readonly", false).css("background-color", "#ccffcc");
+          $("#profile-save-button").text("Save");
+          $("#profile-cancel-button").hide().removeClass("d-none").fadeIn(500);
+      } else {
+          // Disabling edit mode
+          $(".editable-fields input").prop("readonly", true).css("background-color", "");
+          $("#profile-save-button").text("Edit");
+          $("#profile-cancel-button").fadeOut(500, function() {
+              $(this).addClass("d-none");
+          });
+      }
+  });
+
+  $("#profile-cancel-button").click(function () {
+      // Reverting changes and disabling edit mode
+      $(".editable-fields input").each(function () {
+          const id = $(this).attr("id");
+          $(this).val(initialFieldValues[id]);
+      });
+      $(".editable-fields input").prop("readonly", true).css("background-color", "");
+      $("#profile-save-button").text("Edit");
+      $("#profile-cancel-button").fadeOut(500, function() {
+          $(this).addClass("d-none");
+      });
+      isEditMode = false;
+  });
+});

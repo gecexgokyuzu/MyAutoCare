@@ -11,7 +11,7 @@
                         <p class="col-12">Phone: (123) 456-7890</p>
                         <p class="col-12">Email: info@myautocare.com</p>
                     </div>
-                    <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Contact Form</button>
+                    <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-whatever="@getbootstrap">Contact Form</button>
                 </div>
             </div>
             <div class="col-md-4 mb-1">

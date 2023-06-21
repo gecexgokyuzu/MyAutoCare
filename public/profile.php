@@ -24,7 +24,7 @@
                 <div class="mb-2 pb-1">
                     <h1 class="text-light text-center fw-bold text-decoration-underline">My Profile</h1>
                 </div>
-                <div class="profile-details d-flex flex-row flex-wrap m-3 justify-content-around align-items-center">
+                <div class="d-flex flex-row flex-wrap m-3 mt-0 justify-content-around align-items-end">
                     <div class="col-12 col-md-6 profile-img px-0 m-2">
                         <img class="rounded-circle" src="https://placeholder.pics/svg/150" />
                     </div>
@@ -52,27 +52,35 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-12 profile-info d-flex">
-                    <div class="row g-3">
+                <div class="d-flex flex-row flex-wrap m-3 profile-box mb-4">
+                    <span class="col-12 fw-bold text-light fs-4 text-decoration-underline mb-1 pb-0 lh-1">Personal Information</span><br>
+                    <span class="col-12 fs-8 fst-italic mb-3 lh-1 text-muted">Please contact us in order to change "Personal Information".</span><br>
+                    <div class="row g-3 flex-grow-1">
                         <div class="col-12 col-lg-6">
                             <label for="name" class="form-label text-light mb-1">Name</label>
-                            <input type="text" class="form-control form-control-sm" id="name" value="John" readonly>
+                            <input type="text" class="form-control form-control-sm" id="name" value="John" readonly disabled>
                         </div>
                         <div class="col-12 col-lg-6">
                             <label for="surname" class="form-label text-light mb-1">Surname</label>
-                            <input type="text" class="form-control form-control-sm" id="surname" value="Doe" readonly>
+                            <input type="text" class="form-control form-control-sm" id="surname" value="Doe" readonly disabled>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label for="idnumber" class="form-label text-light mb-1">ID Number</label>
+                            <input type="text" class="form-control form-control-sm" id="idnumber" value="123456789" readonly disabled>
                         </div>
                         <div class="col-12 col-lg-6">
                             <label for="gender" class="form-label text-light mb-1">Gender</label>
-                            <input type="text" class="form-control form-control-sm" id="gender" value="Male" readonly>
+                            <input type="text" class="form-control form-control-sm" id="gender" value="Male" readonly disabled>
                         </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row flex-wrap m-3 profile-box">
+                    <span class="col-12 fw-bold text-light fs-4 text-decoration-underline mb-1 pb-0 lh-1">Contact Information</span><br>
+                    <span class="col-12 fs-8 fst-italic mb-3 lh-1 text-muted">You can edit "Contact Information" by clicking the "Edit" button at the bottom.</span><br>
+                    <div class="row g-3 editable-fields profile-controls">
                         <div class="col-12 col-lg-6">
                             <label for="mobile-number" class="form-label text-light mb-1">Mobile Number</label>
                             <input type="text" class="form-control form-control-sm" id="mobile-number" value="123-456-7890" readonly>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <label for="phone-number" class="form-label text-light mb-1">Phone Number</label>
-                            <input type="text" class="form-control form-control-sm" id="phone-number" value="098-765-4321" readonly>
                         </div>
                         <div class="col-12 col-lg-6">
                             <label for="alternative-number" class="form-label text-light mb-1">Alternative Number</label>
@@ -95,15 +103,19 @@
                             <input type="text" class="form-control form-control-sm" id="postal-code" value="10001" readonly>
                         </div>
                     </div>
-                </div>
-                <div class="container">
-                    
+                    <div class="d-flex flex-column flex-grow-1 gap-3 mt-3 profile-controls">
+                        <div class="btn-group profile-controls gap-3" role="group">
+                            <button type="button" id="profile-cancel-button" class="col-6 btn btn-sm btn-danger mt-3 d-none">Cancel</button>
+                            <button type="button" id="profile-save-button" class="col-6 btn btn-sm btn-primary mt-3">Edit</button>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-danger flex-grow-1" data-bs-toggle="modal" data-bs-target="#changePasswordModal">Change Password</button>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
     <?php include 'includes/footer.php'; ?>
-    <?php include 'includes/modal.php'; ?>
+    <?php include 'includes/contactModal.php'; ?>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- JQuery -->
